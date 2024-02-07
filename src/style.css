@@ -1,0 +1,68 @@
+/* animation code */
+.animation {
+  cursor: pointer;
+  animation: flot-infini 2s ease-in-out 0s infinite;
+  -webkit-animation: flot-infini 2s ease-in-out 0s infinite;
+}
+@keyframes flot-infini {
+  0% {
+    /* transform: scale(1); */
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-15px);
+  }
+  100% {
+    /* transform: translateY(0px); */
+    transform: scale(1);
+  }
+}
+/* animation code */
+.animation-horizontal {
+  cursor: pointer;
+  animation: horizontal-infini 2s ease-in-out 0s infinite;
+  -webkit-animation: horizontal-infini 2s ease-in-out 0s infinite;
+}
+@keyframes horizontal-infini {
+  0% {
+    /*transform: scale(1);
+    */
+    transform: translateX(0px);
+    -webkit-transform: translateY(0px);
+  }
+  50% {
+    transform: translateX(15px);
+    -webkit-transform: translateX(15px);
+    -moz-transform: translateX(15px);
+    -ms-transform: translateX(15px);
+    -o-transform: translateX(15px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+
+/* effet zoom */
+
+/* animation code */
+.animation-zoom {
+  cursor: pointer;
+  animation: zoom-infini 2s ease-in-out 0s infinite;
+  -webkit-animation: zoom-infini 2s ease-in-out 0s infinite;
+}
+@keyframes zoom-infini {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(0.9);
+    -webkit-transform: scale(0.9);
+    -moz-transform: scale(0.9);
+    -ms-transform: scale(0.9);
+    -o-transform: scale(0.9);
+  }
+  100% {
+    /* transform: translateY(0px); */
+    transform: scale(1);
+  }
+}
